@@ -59,7 +59,6 @@ public class MinwonPortalKpiNativeQueryRepository {
     }
 
     private static MinwonPortalKpiResult mapRow(Object[] row) {
-        // Native Query select column order와 map index를 1:1로 맞춥니다.
         String serviceName = (String) row[0];
         Integer reportYear = toInteger(row[1]);
         Integer reportMonth = toInteger(row[2]);

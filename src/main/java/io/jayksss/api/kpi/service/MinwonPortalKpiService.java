@@ -14,7 +14,6 @@ public class MinwonPortalKpiService {
     }
 
     public List<MinwonPortalKpiResult> getMinwonPortalKpi(int year, int month) {
-        // 민원포털 고정 service_code
         return repository.fetchMinwonPortalKpiResults("MINWON-PORTAL", year, month);
     }
 }

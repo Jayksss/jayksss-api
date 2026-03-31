@@ -25,7 +25,6 @@ public class YnBooleanConverter implements AttributeConverter<Boolean, String> {
         if (v.equalsIgnoreCase("N")) {
             return false;
         }
-        // 방어: '1','0','true','false' 등이 들어오는 경우도 처리
         if (v.equals("1") || v.equalsIgnoreCase("true")) {
             return true;
         }

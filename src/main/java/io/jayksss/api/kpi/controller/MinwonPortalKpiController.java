@@ -17,8 +17,6 @@ public class MinwonPortalKpiController {
         this.service = service;
     }
 
-    // 예: -- 민원포털 2026년 3월 KPI 결과 조회
-    // GET /api/kpi/minwon-portal?year=2026&month=3
     @GetMapping("/minwon-portal")
     public List<MinwonPortalKpiResult> getMinwonPortal(
             @RequestParam(defaultValue = "2026") int year,

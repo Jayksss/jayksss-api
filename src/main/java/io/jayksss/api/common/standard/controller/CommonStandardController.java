@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/common/standard")
+@RequestMapping("/common/standard")
 public class CommonStandardController {
     private final CommonStandardQueryService queryService;
 
@@ -50,7 +50,7 @@ public class CommonStandardController {
 
     /**
      * 공통코드 상세 조회 예시 (그룹 코드는 {@link io.jayksss.api.common.standard.CodeDetailGroupCode} 참고):
-     * {@code GET /api/common/standard/code-details?groupCode=PROC_TYPE&useYn=Y} (또는 {@code true}, {@code y})
+     * {@code GET /common/standard/code-details?groupCode=PROC_TYPE&useYn=Y} (또는 {@code true}, {@code y})
      * — 예: 요청/구성/변경관리 등 프로세스 유형(01~08). 다른 그룹은 {@code CHANGE_TYPE}, {@code INQUIRY_STATUS} 등.
      */
     @GetMapping("/code-details")
